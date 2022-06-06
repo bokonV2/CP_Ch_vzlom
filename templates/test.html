@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static/css/master.css">
+    <link rel="stylesheet" href="/static/css/test.css">
+    <script src="/static/js/test.js" charset="utf-8"></script>
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+  </head>
+  <body>
+    {% for element in tests %}
+    <div class="item">
+      <div class="quest">{{ element[0] }}</div>
+      {% for quest in element[1] %}
+      <div class="otv"><input class="" type="checkbox" name="{{ quest[1] }}"><span>{{ quest[0] }}</span></div>
+      {% endfor %}
+    </div>
+
+    {% endfor %}
+    <div class="mdc-button mdc-button--raised button" onclick="calk({{id}})">Проверить</div>
+  </body>
+</html>

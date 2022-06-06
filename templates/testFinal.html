@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static/css/master.css">
+    <link rel="stylesheet" href="/static/css/test.css">
+    <script src="/static/js/test.js" charset="utf-8"></script>
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+  </head>
+  <body onload="proc({{otvets}}, {{verno}})">
+    <div class="final disp">
+      <div class="popup disp">
+        <h1>{{theme}}</h1>
+        <br><br>
+        <h3>Верных ответов {{verno}} из {{otvets}}</h3>
+        <br><br><br>
+        <h2 id="proc">sd</h2>
+        <progress value="{{verno}}" max="{{otvets}}"></progress>
+        <div class="controls">
+          <a class="mdc-button mdc-button--raised" href="/test/{{id}}">Заново</a>
+          <a class="mdc-button mdc-button--raised" href="/">Главная</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

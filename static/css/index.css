@@ -1,0 +1,23 @@
+.menu{
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+a{
+  /* text-decoration: none; */
+  /* color: #000; */
+  /* font-size: 24px; */
+  text-align: center;
+
+  width: 75vw;
+  padding: 5px;
+  margin: 5px;
+  /* margin-top: 5px; */
+  /* border-radius: 5px; */
+
+  /* background-color: lightblue; */
+}

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static/css/master.css">
+    <link rel="stylesheet" href="/static/css/index.css">
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+  </head>
+  <body>
+    <div class="menu">
+      {% for i in thems %}
+      <a class="mdc-button mdc-button--raised" href="/lect/{{id}}/{{loop.index}}">{{i}}</a>
+      {% endfor %}
+    </div>
+  </body>
+</html>
