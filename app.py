@@ -42,7 +42,7 @@ def testFinal(id):
 
 @app.route('/tren/<int:id>')
 def tren(id):
-    return render_template('tren.html', id=id)
+    return render_template('trening.html', id=id)
 
 @app.route('/kont/<int:id>')
 def kont(id):
